@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     background-color: var(--dark-color);
 }
@@ -96,11 +96,12 @@ a {
     margin-right: 10px;
 }
 
+/* Main */
 .banner-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 calc(5%);
+    padding: 0 5%;
     margin-top: 30px;
 }
 
@@ -117,6 +118,14 @@ a {
     font-size: 3rem;
     font-weight: bold;
     padding: 0 0 0 15px;
+}
+
+.banner-section-left h1::after {
+    content: ".";
+    margin-left: 7px;
+    color: var(--purple-color);
+    font-size: 4rem;
+
 }
 
 .banner-section-left h3 {
@@ -141,5 +150,75 @@ a {
 .banner-section-right {
     width: 30%;
     color: var(--main-text-color);
+    line-height: 1.5;
+    position: relative;
+}
 
+.banner-section-right-header h3 {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    border: 1px solid var(--main-text-color);
+    padding: 10px;
+}
+
+.banner-section-right-footer {
+    margin-top: 10px;
+}
+
+.banner-section-right-footer button {
+    font-weight: bold;
+    font-size: .75rem;
+    padding: 7px 10px;
+    border: none;
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
+.banner-section-right-footer-btn-1 {
+    background-color: var(--purple-color);
+}
+
+.banner-section-right-footer-btn-2 {
+    background-color: transparent;
+}
+
+.counter-section {
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.counter-section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 30px 0;
+    margin: 10px;
+}
+
+.counter-section .row div {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.counter-section .row div p {
+    margin-left: 5px;
+    color: var(--main-text-color);
+    font-weight: bold;
+    font-size: .75rem;
+}
+
+.counter-section .row div span {
+    color: var(--main-text-color);
+    font-size: 1.5rem;
+
+}
+
+.counter-section .row div span::before {
+    color: var(--purple-color);
+    content: "+";
+    font-weight: bold;
 }
