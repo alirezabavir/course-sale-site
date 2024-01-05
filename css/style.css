@@ -9,6 +9,7 @@
     --main-text-color: #ffff;
     --dark-color: #181818;
     --purple-color: #a460f9;
+    --silver-color: #636363;
 }
 
 body {
@@ -221,4 +222,48 @@ a {
     color: var(--purple-color);
     content: "+";
     font-weight: bold;
+}
+
+.challenges-section {
+    background-image: url("/images/main-section-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.challenges-section .row {
+    width: 100%;
+}
+
+.challenges-section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.challenges-section-top p {
+    margin: 0 40px;
+    writing-mode: vertical-rl;
+    color: var(--main-text-color);
+    font-size: .70rem;
+}
+
+.challenges-section-top h1 {
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+
+.challenges-section-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    margin-top: 80px;
+}
+
+.challenges-section-bottom a {
+    color: var(--silver-color);
+    font-weight: bold;
+    font-size: 1.2rem;
 }
