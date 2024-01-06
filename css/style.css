@@ -97,12 +97,12 @@ a {
     margin-right: 10px;
 }
 
-/* Main */
+/* main */
 .banner-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
+    padding: 50px 5%;
     margin-top: 30px;
 }
 
@@ -266,4 +266,98 @@ a {
     color: var(--silver-color);
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.courses-section {
+    padding: 0 40px;
+}
+
+.courses-section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses-section-title .courses-section-title-left span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-text-color);
+}
+
+.courses-section-title .courses-section-title-left p {
+    color: var(--main-text-color);
+}
+
+.courses-section-title-right {
+    text-align: center;
+    color: var(--main-text-color);
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.courses-section-title-right p:nth-child(1) {
+    font-size: .5rem;
+}
+
+.courses-item {
+    text-align: center;
+    border: 1px solid var(--main-text-color);
+    padding: 40px;
+    position: relative;
+    margin: 0 10px;
+}
+
+.courses-section-items {
+    margin-top: 50px;
+}
+
+
+.courses-section-items .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses-item-title h1 {
+    font-size: 1.3rem;
+    color: var(--main-text-color);
+}
+
+.courses-item-title::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--purple-color);
+    width: 25%;
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.courses-item-title-counter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-text-color);
+    padding: 3px;
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.courses-item-title h1 span {
+    color: var(--purple-color);
+}
+
+.courses-item-body {
+    margin: 20px 0;
+    color: var(--main-text-color);
+    font-size: .80rem;
+    line-height: 2;
+}
+
+.courses-item-footer a {
+    font-size: .75rem;
+    background-color: var(--purple-color);
+    padding: 5px 10px;
+
 }
