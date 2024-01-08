@@ -315,6 +315,7 @@ a {
 .courses-section-items .row {
     display: flex;
     justify-content: space-between;
+
 }
 
 .courses-item-title h1 {
@@ -360,4 +361,68 @@ a {
     background-color: var(--purple-color);
     padding: 5px 10px;
 
+}
+
+
+.feedback-section-title {
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
+.feedback-section-title h1 {
+    color: var(--main-text-color);
+    font-size: 1.7rem;
+}
+
+.feedback-section-title h2 {
+    color: var(--purple-color);
+    font-size: 1.2rem;
+}
+
+.feedbacks-section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 40px;
+}
+
+.feedback-item img {
+    border: 1px solid var(--purple-color);
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.feedback-item-header p {
+    color: var(--main-text-color);
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.feedback-item-header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.feedback-item-header ul li {
+    color: var(--main-text-color);
+}
+
+.feedback-item-header-rating {
+    color: var(--purple-color);
+}
+
+.feedback-item-body p {
+    text-align: center;
+    color: var(--main-text-color);
+    font-size: .75rem;
+    line-height: 2;
 }
