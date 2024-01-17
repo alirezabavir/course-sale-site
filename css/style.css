@@ -439,11 +439,12 @@ li {
 
 .newsletter-banner {
     width: 50%;
-
+    z-index: -1;
 }
 
 .newsletter-banner img {
     width: 100%;
+
 }
 
 .newsletter-form {
@@ -496,10 +497,10 @@ li {
 }
 
 .newsletter-form button {
-    font-size: 1rem;
+    font-size: .75rem;
     background-color: var(--purple-color);
     color: var(--main-text-color);
-    padding: 10px 10px;
+    padding: 7px 5px;
     outline: none;
     border: none;
     border-radius: 2px;
@@ -508,6 +509,7 @@ li {
 
 footer .container {
     background-color: var(--purple-color);
+    margin-top: -5px;
 }
 
 footer .row {
@@ -516,4 +518,63 @@ footer .row {
     align-items: center;
     width: 100%;
     padding: 50px 0;
+}
+
+footer .row h2 {
+    display: inline;
+    color: var(--main-text-color);
+    font-size: 1rem;
+}
+
+.underline {
+    width: 100%;
+    border-bottom: 1px solid var(--main-text-color);
+}
+
+footer .container .row ul {
+    color: var(--main-text-color);
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer form p {
+    color: var(--main-text-color);
+}
+
+footer form input {
+    background-color: transparent;
+    border: 1px solid var(--main-text-color);
+    padding: 4px;
+    outline: none;
+    color: var(--main-text-color);
+    margin: 20px 0;
+}
+
+footer form ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+footer form ul button {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-size: .75rem;
+    border: none;
+    cursor: pointer;
+}
+
+footer form ul li i {
+    background-color: var(--main-text-color);
+    padding: 7px;
+    border-radius: 50px;
+    color: var(--purple-color);
 }
