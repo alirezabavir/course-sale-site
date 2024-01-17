@@ -23,6 +23,10 @@ a {
     color: var(--main-text-color);
 }
 
+li {
+    list-style: none;
+}
+
 /* header */
 .container {
     display: flex;
@@ -425,4 +429,91 @@ a {
     color: var(--main-text-color);
     font-size: .75rem;
     line-height: 2;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-banner {
+    width: 50%;
+
+}
+
+.newsletter-banner img {
+    width: 100%;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+}
+
+.newsletter-form h2 {
+    font-size: 1.3rem;
+    color: var(--main-text-color);
+}
+
+.newsletter-form p:first-of-type {
+    color: var(--purple-color);
+    font-size: 1.5rem;
+    padding: 3px;
+}
+
+.newsletter-form p:nth-of-type(2) {
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+}
+
+.newsletter-form input {
+    background-color: transparent;
+    border: 1px solid var(--purple-color);
+    outline: none;
+    width: 50%;
+    line-height: 2;
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+
+.newsletter-form input:focus {
+    color: var(--main-text-color);
+}
+
+.newsletter-form textarea {
+    background-color: transparent;
+    border: 1px solid var(--purple-color);
+    outline: none;
+    width: 50%;
+    line-height: 1;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.newsletter-form button {
+    font-size: 1rem;
+    background-color: var(--purple-color);
+    color: var(--main-text-color);
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+footer .container {
+    background-color: var(--purple-color);
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
 }
